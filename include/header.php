@@ -1,5 +1,6 @@
 <?php
 include "database/function.php";
+include "database/category.php";
 ?>
 <!doctype html>
 <html lang="uk">
@@ -28,7 +29,8 @@ include "database/function.php";
             $menus = get_menu();
             ?>
             <?php foreach ($menus as $menu):?>
-                <li class="nav-item"><a class="nav-link" href=""><?=$menu['title']?></a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="category.php?category_id=<?=$menu['id'];?>"><?=$menu['title']?></a>
                 </li>
             <?php endforeach;?>
         </ul>
