@@ -1,5 +1,6 @@
 <?php
-    require "include/header.php";
+    include_once "include/header.php";
+    include_once "include/footer.php";
 ?>
 <section>
     <div class="container">
