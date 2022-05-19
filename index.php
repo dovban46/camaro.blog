@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?=$new['title']?></h5>
                             <p class="card-text"><?= mb_substr($new['content'], 0,280, 'UTF-8') . '...'?></p>
-                            <a href="post.php?news_id=<?=$new['id']?>" class="btn btn-primary">Переглянути</a>
+                            <a href="post.php?news_id=<?=$new['id_news']?>" class="btn btn-primary">Переглянути</a>
                         </div>
                     </div>
                 <?php endforeach; ?>

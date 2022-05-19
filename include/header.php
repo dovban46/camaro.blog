@@ -1,6 +1,5 @@
 <?php
 include "database/function.php";
-include "database/category.php";
 ?>
 <!doctype html>
 <html lang="uk">
@@ -9,7 +8,7 @@ include "database/category.php";
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Мій персональний блог</title>
+    <title>Camaro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -30,7 +29,7 @@ include "database/category.php";
             ?>
             <?php foreach ($menus as $menu):?>
                 <li class="nav-item active">
-                    <a class="nav-link" href="category.php?category_id=<?=$menu['id'];?>"><?=$menu['title']?></a>
+                    <a class="nav-link" href="category.php?category_id=<?=$menu['id_menu'];?>"><?=$menu['title']?></a>
                 </li>
             <?php endforeach;?>
         </ul>
